@@ -1,0 +1,40 @@
+{
+  "name": "DummyAvroTest",
+  "type": "record",
+  "namespace": "fr.barbicane.maston.gen",
+  "fields": [
+    {
+      "name": "mandatoryStringValue",
+      "type": "string"
+    },
+    {
+      "name": "mandatoryBusinessStringKey",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "nullableStringValue",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "nullableDummyBigDecimal",
+      "type": [
+        "null",
+        {
+          "logicalType": "decimal",
+          "precision": 64,
+          "scale": 0,
+          "type": "bytes"
+        }
+      ],
+      "default": null
+    }
+  ]
+}
